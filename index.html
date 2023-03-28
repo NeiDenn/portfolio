@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
   <meta name="description" content="Bienvenido a mi portafolio de CV, aquí encontrarás mis habilidades, experiencia y proyectos anteriores.">
   <meta name="keywords" content="CV, portafolio, habilidades, experiencia, proyectos.">
   <meta name="author" content="Neiser Dennis Mamani">
-  <title>Neiser Dennis - Portafolio Personal</title>
+  <title>Neiser Dennis - Portafolio</title>
 
   <!-- Favicon Icon -->
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
@@ -357,18 +357,18 @@
                 <div class="project-container">
                   <div class="project-img-container" onclick="document.getElementById('modal-razeak').style.display='block'">
                     <i class="fa-solid fa-eye expand_icon"></i>
-                    <img src="img/razeak.png" alt="razeak">
+                    <img src="img/razeak.png" alt="Razeak">
                   </div>
                   <p class="project-title">Razeak (Ecommerce)</p>
                 </div>
                 <!-- Project End -->
                 <!-- Project Start -->
                 <div class="project-container">
-                  <div class="project-img-container" onclick="document.getElementById('modal-null').style.display='block'">
+                  <div class="project-img-container" onclick="document.getElementById('modal-game').style.display='block'">
                     <i class="fa-solid fa-eye expand_icon"></i>
-                    <img src="img/bg-portfolio.jpg" alt="null">
+                    <img src="img/game-1.png" alt="Game Project">
                   </div>
-                  <p class="project-title">Null</p>
+                  <p class="project-title">Game Project (Spring)</p>
                 </div>
                 <!-- Project End -->
               </div>
@@ -557,6 +557,38 @@
                 </form>
               </div> 
               <!-- Razeak Modal End -->
+
+              <!-- Game Modal Start -->
+              <div id="modal-game" class="modal">
+                <form class="modal-content animate">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('modal-game').style.display='none'" class="close">&times;</span>
+                    <h5>Game Project</h5>
+                    <strong class="border-bottom-project">Técnologias</strong>                 
+                    <div class="project_details">
+                      <i class="fa-brands fa-html5" title="Html5"></i>
+                      <i class="fa-brands fa-bootstrap" title="Bootstrap"></i>
+                      <i class="devicon-mysql-plain" title="MySql"></i>
+                      <i class="devicon-jquery-plain" title="JQuery"></i>
+                      <i class="devicon-javascript-plain" title="JavaScript"></i>
+                    </div>
+                    <br>
+                    <strong class="border-bottom-project">Descripcion</strong>
+                    <p class="text_justify">Spring CRUD es una demostración de cómo implementar operaciones CRUD simples con las entidades Juego, Genero y Desarrolladora</p>
+                    <strong class="border-bottom-project">Enlace</strong>
+                    <div style="padding-bottom: 0.5rem;">
+                      <a href="https://github.com/NeiDenn/spring-proyecto-jpa" target="z_blank">Ver Proyecto
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </a>
+                    </div>
+                    <br>
+                    
+                    <img src="img/game-1.png" class="avatar" alt="Game Project">
+                    <img src="img/game-2.png" class="avatar" alt="Game Project">
+                  </div>                 
+                </form>
+              </div> 
+              <!-- Game Modal End -->
             </section>
           </div>
           <!-- Projects End -->
