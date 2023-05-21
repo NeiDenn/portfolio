@@ -1131,6 +1131,15 @@ input[type=text], .project_description, input[type=url] {
 
 /* Contact Me */
 
+/* Zoom Image-Project */
+.zoomable-image {
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+.zoomed-image {
+  transform: scale(2);
+}
+
 
 /* Footer */
 footer {
