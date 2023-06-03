@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -74,26 +75,32 @@ p, blockquote, q, pre, address, hr, code, samp, dl, ol, ul, form, table, fieldse
 
 .page-up {
 	position: fixed;
-  bottom: 40px;
+  bottom: 45px;
 	right: 30px;
   transform: rotate(45deg);
-
+  z-index: 9999;
 }
 .page-up a {
   padding: 10px;
   border: 3px solid #fff;
 	background: #0b0c2a;
   cursor: pointer;
+  transition: border-color 0.3s ease;
 }
 
 .page-up a i{
   color: #fdfdfd;
   font-size: 20px;
   transform: rotate(315deg);
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .page-up a:hover{
   border: 3px solid #59BD85;
+}
+
+.page-up a:hover i {
+  color: #59bd85;
 }
 
 /* Btn Disabled */
@@ -497,8 +504,18 @@ body {
 
 .my-skill {
   display: flex;
-  flex-wrap: wrap;
-  padding-right: 15px;
+}
+
+.my-skill img {
+  width: 27px;
+  height: 27px;
+  margin-right: 5px;
+}
+
+.my-skill span {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-right: 10px;
 }
 
 .no-list {
@@ -945,15 +962,16 @@ body {
 }
 
 .border-bottom-project{
-  border-bottom: 1px solid #2E8B57;
+  border-bottom: 3px solid #59bd85;
   line-height: 2rem;
 }
 
 .project-title {
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   margin: 1.2rem auto;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 .project_details{
   display: block;
@@ -961,7 +979,13 @@ body {
   margin : 0;
   font-weight: bold;
   padding-top: 0.5rem;
+  transition: color 0.3s ease;
 }
+
+.project_details i:hover {
+  color: #59bd85;
+}
+
 input[type=text], .project_description, input[type=url] {
   width: 85%;
   padding: 12px 20px;
@@ -1000,6 +1024,15 @@ input[type=text], .project_description, input[type=url] {
   position: relative;
   padding: 15px;
 }
+
+.imgcontainer h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 5px;
+}
+
+
 .avatar {
   width: 100%;
   /* height: 100%; */
@@ -1028,6 +1061,36 @@ input[type=text], .project_description, input[type=url] {
   width: 30%;
   padding-bottom: 20px;
 }
+
+.ver-proyecto-animate {
+  display: inline-block;
+  position: relative;
+  color: #333;
+  text-decoration: none;
+  transition: border-color 0.3s ease;
+  border-radius: 0.5rem;
+  padding: 8px 16px;
+  background-color: #59bd85;
+  border: 1px solid #59bd85;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.ver-proyecto-animate:hover {
+  border: 1px solid #59bd85;
+  background-color: #4ca073;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ver-proyecto-animate:hover i {
+  transform: translateX(5px);
+}
+
+.ver-proyecto-animate i {
+  transition: transform 0.3s ease;
+}
+
 
 /* The Close Button (x) */
 .close {
@@ -1167,11 +1230,32 @@ footer p {
   }
 
   .project-section {
-    grid-template-columns: auto;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .project-container {
     max-width: 200px;
+  }
+
+  .modal-content {
+    width: 80%;
+  }
+
+  .zoomable-image,
+  .zoomed-image {
+    transition: none;
+    cursor: default;
+    transform: none;
+  }
+
+  .project_details {
+    flex-wrap: wrap;
+  }
+
+  .project_details i {
+    font-size: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
   }
 }
 
@@ -1250,6 +1334,10 @@ footer p {
 @media (max-width: 768px) {
   .progress-wrapper {
     margin-bottom: 50px;
+  }
+
+  .modal-content {
+    width: 80%;
   }
 }
 
