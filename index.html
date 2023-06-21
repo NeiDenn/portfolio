@@ -319,6 +319,15 @@
                 <!-- Project End -->
                 <!-- Project Start -->
                 <div class="project-container">
+                  <div class="project-img-container" onclick="document.getElementById('modal-sbook-api').style.display='block'">
+                    <i class="fa-solid fa-eye expand_icon"></i>
+                    <img src="img/web-api-1.png" alt="cover">
+                  </div>
+                  <p class="project-title">SBOOK (Asp.Net Core API)</p>
+                </div>
+                <!-- Project End -->
+                <!-- Project Start -->
+                <div class="project-container">
                   <div class="project-img-container" onclick="document.getElementById('modal-music').style.display='block'">
                     <i class="fa-solid fa-eye expand_icon"></i>
                     <img src="img/music-player.png" alt="project image">
@@ -406,6 +415,43 @@
                 </form>
               </div>
               <!-- Manga Modal End -->
+
+              <!-- SBookAPi Modal Start -->
+              <div id="modal-sbook-api" class="modal">
+                <form class="modal-content animate">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('modal-sbook-api').style.display='none'" class="close">&times;</span>
+                    <h5>SBOOK</h5>
+                    <strong class="border-bottom-project">Técnologias</strong>                 
+                    <div class="project_details">
+                      <i class="devicon-csharp-plain" title="C#"></i>
+                      <i class="devicon-microsoftsqlserver-plain colored" title="SQL"></i>
+                      <i class="fas fa-cogs" title="API"></i>
+                      <i class="devicon-jquery-plain" title="JQuery"></i>
+                      <i class="fa-brands fa-html5" title="Html5"></i>
+                      <i class="fa-brands fa-bootstrap" title="Bootstrap5"></i>
+                      <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                      <i class="devicon-javascript-plain" title="JavaScript"></i>
+                    </div>
+                    <br>
+                    <strong class="border-bottom-project">Descripcion</strong>
+                    <p class="text_justify">Es una aplicación web desarrollada utilizando ASP.NET Core Web API y utiliza SQL Server como base de datos. Está diseñada para facilitar el proceso de venta de libros, brindando a los usuarios una plataforma intuitiva y segura para explorar y adquirir una amplia variedad de libros.</p>
+                    <strong class="border-bottom-project">Enlace</strong>
+                    <div style="padding-bottom: 0.5rem;">
+                      <a href="https://github.com/NeiDenn/web-api-sbook" class="ver-proyecto-animate" target="z_blank">Ver Proyecto
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </a>
+                    </div>
+                    <br>                    
+                    <img src="img/web-api-1.png" alt="cover" class="avatar zoomable-image">
+                    <p></p>
+                    <img src="img/web-api-2.png" alt="cover" class="avatar zoomable-image">
+                    <p></p>
+                    <img src="img/web-api-3.png" alt="cover" class="avatar zoomable-image">
+                  </div>                 
+                </form>
+              </div>
+              <!-- SBookAPi Modal End -->
 
               <!-- MPlayer Modal Start -->
               <div id="modal-music" class="modal">
