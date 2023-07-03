@@ -1235,6 +1235,16 @@ footer p {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  h5, .container-skill {
+    display: flex;
+    justify-content: center;
+  }
+
+  .my-skill {
+    display: flex;
+    justify-content: center;
+  }
+
   .project-container {
     max-width: 200px;
   }

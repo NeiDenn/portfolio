@@ -197,6 +197,10 @@
                     <span>Javascript</span>
                   </div>
                   <div class="my-skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" />
+                    <span>Kotlin</span>
+                  </div>
+                  <div class="my-skill">
                     <img src="https://img.icons8.com/color/25/null/typescript.png"/>
                     <span>Typescript</span>
                   </div>
@@ -241,22 +245,20 @@
                 <!-- Databases -->
                 <h5>Base De Datos</h5>
                 <div class="my-skill">
-                  <div class="my-skill">
-                    <img src="https://img.icons8.com/external-those-icons-flat-those-icons/25/null/external-MySQL-programming-and-development-those-icons-flat-those-icons.png"/>
-                    <span>MySql</span>
-                  </div>
-                  <div class="my-skill">
-                    <img src="https://img.icons8.com/external-soft-fill-juicy-fish/25/null/external-sql-coding-and-development-soft-fill-soft-fill-juicy-fish.png"/>
-                    <span>SQL</span>
-                  </div>
-                  <div class="my-skill">
-                    <img src="https://img.icons8.com/color/24/null/postgreesql.png"/>
-                    <span>PostgreSQL</span>
-                  </div>
-                  <div class="my-skill">
-                    <img src="https://img.icons8.com/color/25/null/mongodb.png"/>
-                    <span>MongoDB</span>
-                  </div>
+                  <img src="https://img.icons8.com/external-those-icons-flat-those-icons/25/null/external-MySQL-programming-and-development-those-icons-flat-those-icons.png"/>
+                  <span>MySql</span>
+                </div>
+                <div class="my-skill">
+                  <img src="https://img.icons8.com/external-soft-fill-juicy-fish/25/null/external-sql-coding-and-development-soft-fill-soft-fill-juicy-fish.png"/>
+                  <span>SQL</span>
+                </div>
+                <div class="my-skill">
+                  <img src="https://img.icons8.com/color/24/null/postgreesql.png"/>
+                  <span>PostgreSQL</span>
+                </div>
+                <div class="my-skill">
+                  <img src="https://img.icons8.com/color/25/null/mongodb.png"/>
+                  <span>MongoDB</span>
                 </div>
                 <div class="break"></div>
               </div>
@@ -295,10 +297,6 @@
 
               <div class="g2">
                 <hr>
-                <h5>Hobbies</h5>
-                <span class="label label-info">Swimming</span>
-                <span class="label label-info">Soccer</span>
-                <span class="label label-info">Music</span>
               </div>
             </section>
           </div>
@@ -312,9 +310,18 @@
                 <div class="project-container">
                   <div class="project-img-container" onclick="document.getElementById('modal-manga').style.display='block'">
                     <i class="fa-solid fa-eye expand_icon"></i>
-                    <img src="img/s-manga.png" alt="s-manga">
+                    <img src="img/s-manga.png" alt="project">
                   </div>
                   <p class="project-title">S-Manga (Spring)</p>
+                </div>
+                <!-- Project End -->
+                <!-- Project Start -->
+                <div class="project-container">
+                  <div class="project-img-container" onclick="document.getElementById('modal-kotlin-sbook').style.display='block'">
+                    <i class="fa-solid fa-eye expand_icon"></i>
+                    <img src="img/kotlin-3.png" alt="project">
+                  </div>
+                  <p class="project-title">SBOOK (Kotlin)</p>
                 </div>
                 <!-- Project End -->
                 <!-- Project Start -->
@@ -404,7 +411,7 @@
                     <p class="text_justify">El proyecto es un sistema de alquiler de libros construido con el framework Spring y la base de datos MySQL. La aplicación permite a los usuarios registrarse, buscar y alquilar libros disponibles, y llevar un registro de los préstamos y devoluciones.</p>
                     <strong class="border-bottom-project">Enlace</strong>
                     <div style="padding-bottom: 0.5rem;">
-                      <a href="#_" class="ver-proyecto-animate">En desarrollo...
+                      <a href="https://github.com/NeiDenn/spring-smanga" class="ver-proyecto-animate" target="z_blank">Ver Proyecto
                         <i class="fa-solid fa-arrow-right"></i>
                       </a>
                     </div>
@@ -415,6 +422,36 @@
                 </form>
               </div>
               <!-- Manga Modal End -->
+
+              <!-- Kotlin SBOOK Modal Start -->
+              <div id="modal-kotlin-sbook" class="modal">
+                <form class="modal-content animate">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('modal-kotlin-sbook').style.display='none'" class="close">&times;</span>
+                    <h5>SBOOK</h5>
+                    <strong class="border-bottom-project">Técnologias</strong>                 
+                    <div class="project_details">
+                      <i class="devicon-kotlin-plain" title="Kotlin"></i>
+                      <i class="devicon-firebase-plain" title="Firebase"></i>
+                      <i class="devicon-android-plain" title="Android"></i>
+                    </div>
+                    <br>
+                    <strong class="border-bottom-project">Descripcion</strong>
+                    <p class="text_justify">SBOOK se centra en la administración y organización de libros, facilitando a los usuarios la tarea de registrar, actualizar, eliminar y gestionar la biblioteca de libros de manera eficiente.</p>
+                    <strong class="border-bottom-project">Enlace</strong>
+                    <div style="padding-bottom: 0.5rem;">
+                      <a href="https://github.com/NeiDenn/app-mobile-sbook" class="ver-proyecto-animate" target="z_blank">Ver Proyecto
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </a>
+                    </div>
+                    <br>                    
+                    <img src="img/kotlin-1.png" alt="cover" style="height: 350px;">
+                    <img src="img/kotlin-2.png" alt="cover" style="height: 350px;">
+                    <img src="img/kotlin-3.png" alt="cover" style="height: 350px;">
+                  </div>                 
+                </form>
+              </div>
+              <!-- Kotlin SBOOK Modal End -->
 
               <!-- SBookAPi Modal Start -->
               <div id="modal-sbook-api" class="modal">
