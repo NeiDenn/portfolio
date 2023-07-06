@@ -3,7 +3,7 @@ $(window).on('load', function() {
     setTimeout(function() {
       $('#loader').fadeOut('slow');
       $('#volver-arriba').removeClass('hide');
-    }, 1200);
+    }, 1000);
 });
 
 // "Hello World" Animation Typing
