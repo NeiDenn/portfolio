@@ -1,16 +1,8 @@
-/* null */
-var c = 0;
-/* if(localStorage.getItem("abc")) { c = localStorage.getItem("abc");}
-c++;
-document.getElementById("abc").innerHTML = c;
-localStorage.setItem("abc", c); */
-/* back to top */
+// Back To Top
 $(document).ready(function(){
 
-	// hide #back-top first
 	$("#volver-arriba").hide();
 	
-	// fade in #back-top
 	$(function () {
 		$(window).scroll(function () {
 			if ($(this).scrollTop() > 100) {
@@ -19,8 +11,6 @@ $(document).ready(function(){
 				$('#volver-arriba').fadeOut();
 			}
 		});
-
-		// scroll body to 0px on click
 		$('#volver-arriba a').click(function () {
 			$('body,html').animate({
 				scrollTop: 0

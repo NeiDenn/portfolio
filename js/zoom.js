@@ -1,4 +1,4 @@
-/* JS ZOOM */
+// Zoom Image
 const images = document.querySelectorAll(".zoomable-image");
 
 images.forEach((image) => {
