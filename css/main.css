@@ -78,7 +78,7 @@ body {
 }
 ::-webkit-scrollbar-thumb{
   border-radius: 10px;
-  background: #59BD85;
+  background: #2E8B57;
 }
 
 body, button, input, select, textarea {
@@ -118,7 +118,7 @@ p, blockquote, q, pre, address, hr, code, samp, dl, ol, ul, form, table, fieldse
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 15px;
+  padding: 9px 15px;
   border: 2px solid #fff;
   border-radius: 0.5rem;
   background: #0b0c2a;
@@ -569,7 +569,7 @@ body {
   clear: both;
 }
 
-/* Backgrounds */
+/* Background */
 .bg-1 {
   background-image: url('../img/bg-portfolio.jpg');
 }
@@ -653,8 +653,10 @@ body {
 }
 
 .tab a.active {
-  padding-top: 10px;
   color: #2E8B57;
+  padding-top: 10px;
+  font-size: 15px;
+  border-bottom: 2px solid #2E8B57;
 }
 
 .tab a i {
@@ -748,13 +750,36 @@ body {
 .item-box i {
   float: left;
   margin-right: 12px;
+  color: #333;
 }
 
 .item-box .item-data {
   margin-top: 6px;
-  border: 1px solid #000;
+  border: 1px solid #333;
+  background-color: #fff; 
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.item-box:hover .item-data {
+  background-color: #333;
+}
+
+.item-box:hover i {
+  color: #fff;
+}
+
+.item-box:hover .item-data h3 a {
+  color: #fff;
+}
+
+.item-box:hover .item-data p {
+  color: #2E8B57;
+}
+
+.item-box .item-data h3 a {
+  color: #333;
 }
 
 .item-box .item-data h3 {
@@ -766,9 +791,10 @@ body {
 .item-box .item-data p {
   margin: 0px;
   font-size: 12px;
-  color: #2E8B57;
-  text-decoration-style: bold;
+  color: #333; 
+  font-weight: bold;
 }
+
 
 /* WorkExperience */
 .work li {
@@ -840,6 +866,7 @@ body {
   display: block;
   margin-bottom: 1em;
   text-align: center;
+  padding: 0.5rem;
 }
 
 .sny-icon i {
@@ -1143,8 +1170,9 @@ input[type=text], .project_description, input[type=url] {
     font-size: 35px;
     font-weight: bold;
 }
-.close:hover,.close:focus {
-    color: #c7231d;
+.close:hover,
+.close:focus {
+    color: #c91e18;
     cursor: pointer;
 }
 
@@ -1234,8 +1262,6 @@ input[type=text], .project_description, input[type=url] {
   background-image: none;
 }
 
-/* Contact Me */
-
 /* Zoom Image-Project */
 .zoomable-image {
   transition: transform 0.3s ease;
@@ -1244,7 +1270,6 @@ input[type=text], .project_description, input[type=url] {
 .zoomed-image {
   transform: scale(2);
 }
-
 
 /* Footer */
 footer {
@@ -1263,8 +1288,7 @@ footer p {
   margin-bottom: 0px;
 }
 
-/* media Queries
-/* SMALL TABLET */
+/* media Queries */
 @media only screen and (max-width: 600px) {
 
   .etabs>li span {
@@ -1308,6 +1332,10 @@ footer p {
     font-size: 30px;
     margin-right: 5px;
     margin-left: 5px;
+  }
+
+  .sny-icon-box {
+    padding-bottom: 1rem;
   }
 }
 
